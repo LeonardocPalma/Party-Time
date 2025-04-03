@@ -16,14 +16,14 @@ const serviceSchema = new Schema(
       type: Number,
       required: true,
     },
-    image: {
-      type: String,
-      required: true,
-    },
+    image: String,
   },
   { timestamps: true }
 );
 
 const Service = mongoose.model("Service", serviceSchema);
 
-module.exports = { Service, serviceSchema };
+module.exports = {
+  Service,
+  serviceSchema,
+};
