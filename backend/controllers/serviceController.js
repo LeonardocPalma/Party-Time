@@ -17,6 +17,19 @@ const serviceController = {
       res.status(500).json({ error: error.message });
     }
   },
+
+  getAll: async (req, res) => {
+    try {
+
+      const services = await ServiceModel.find();
+
+      res.json(services);
+
+    } catch (error) {
+      res.json({ error: error.message });
+      
+    }
+  }
 };
 
 module.exports = serviceController;
