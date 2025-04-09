@@ -18,3 +18,14 @@ GET http://localhost:3000/api/services/:id
 
 ###
 DELETE http://localhost:3000/api/services/67ef1e20ca28cd720824f78b
+
+###
+PUT http://localhost:3000/api/services/67f1bc673094abe907fab65a
+Content-Type: application/json
+
+  {
+    "name": "Teste atualização",
+    "description": "Teste atualização",
+    "price": 15400,
+    "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+  }
