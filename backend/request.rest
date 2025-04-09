@@ -29,3 +29,67 @@ Content-Type: application/json
     "price": 15400,
     "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
   }
+
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+  "title": "Meu evento 2",
+  "author": "Leonardo",
+  "description": "Festa de aniversário",
+  "budget": 5000,
+  "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80",
+  "services": [
+    {
+      "name": "Algum Serviço",
+      "description": "Alguma Descrição",
+      "price": 3000,
+      "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+    },
+    {
+      "name": "Algum Serviço 2",
+      "description": "Alguma Descrição 2",
+      "price": 1600,
+      "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+    }
+  ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+
+###
+
+GET http://localhost:3000/api/parties/67f5c88ac9e7deb997a6ceb4
+
+###
+DELETE http://localhost:3000/api/parties/67f5c88ac9e7deb997a6ceb4
+
+###
+PUT http://localhost:3000/api/parties/67f5c8fec9e7deb997a6ceb6
+Content-Type: application/json
+
+{
+  "title": "Evento do Leo",
+  "author": "Leonardo",
+  "description": "Festa de aniversário",
+  "budget": 3000,
+  "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80",
+  "services": [
+    {
+      "name": "Algum Serviço",
+      "description": "Alguma Descrição",
+      "price": 3000,
+      "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+    },
+    {
+      "name": "Algum Serviço 2",
+      "description": "Alguma Descrição 2",
+      "price": 1600,
+      "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+    }
+  ]
+}
