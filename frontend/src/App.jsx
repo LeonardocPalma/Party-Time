@@ -1,10 +1,8 @@
-import "./App.css";
-
 import { Outlet } from "react-router-dom";
 
-function App() {
+import "./App.css";
 
-  
+function App() {
   return (
     <div className="App">
       <h1>Party Time</h1>
